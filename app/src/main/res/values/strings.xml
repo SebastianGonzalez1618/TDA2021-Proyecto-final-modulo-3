@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TDA Proyecto final modulo 3</string>
+    <string name="lblProyecto">Proyecto: </string>
+    <string name="departamento">Departamento: </string>
+    <string name="lblDireccion">Dirección: </string>
+</resources>
