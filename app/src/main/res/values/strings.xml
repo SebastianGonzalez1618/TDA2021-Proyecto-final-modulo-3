@@ -1,6 +1,22 @@
 <resources>
-    <string name="app_name">TDA Proyecto final modulo 3</string>
+    <string name="app_name">Check Apartment</string>
     <string name="lblProyecto">Proyecto: </string>
-    <string name="departamento">Departamento: </string>
+    <string name="lblDepartamento">Departamento: </string>
     <string name="lblDireccion">Dirección: </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="inspec_luces">Luces</string>
+    <string name="inspec_banio">Elementos del baño</string>
+    <string name="inspec_cocina">Elementos de la cocina</string>
+    <string name="terminaciones">Estado general de las terminaciones</string>
+    <string name="estado_general_malo">Malo</string>
+    <string name="estado_general_regular">Regular</string>
+    <string name="estado_general_normal">Normal</string>
+    <string name="inspec_dormitorio">Elementos del dormitorio</string>
+    <string name="inspec_puntaje">Puntaje: </string>
+    <string name="btnAlerta">Enviar alerta</string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="email">Email</string>
+    <string name="ingresar">Ingresar</string>
 </resources>
