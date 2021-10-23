@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.InspeccionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/lblProyecto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/lblProyecto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/tvProyecto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tvProyecto"
+            app:layout_constraintBottom_toBottomOf="@+id/lblProyecto"
+            app:layout_constraintStart_toEndOf="@+id/lblProyecto" />
+
+        <TextView
+            android:id="@+id/lblDepartamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/lblDepartamento"
+            app:layout_constraintStart_toStartOf="@+id/lblProyecto"
+            app:layout_constraintTop_toBottomOf="@+id/lblProyecto" />
+
+        <TextView
+            android:id="@+id/tvDepartamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tvDepartamento"
+            app:layout_constraintBottom_toBottomOf="@+id/lblDepartamento"
+            app:layout_constraintStart_toEndOf="@+id/lblDepartamento" />
+
+        <TextView
+            android:id="@+id/tvObservaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="tvObservaciones"
+            app:layout_constraintStart_toStartOf="@+id/tvDepartamento"
+            app:layout_constraintTop_toBottomOf="@+id/tvDepartamento" />
+
+        <CheckBox
+            android:id="@+id/cbLuces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inspec_luces"
+            app:layout_constraintStart_toStartOf="@+id/lblDepartamento"
+            app:layout_constraintTop_toBottomOf="@+id/tvObservaciones" />
+
+        <CheckBox
+            android:id="@+id/cbBanio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inspec_banio"
+            app:layout_constraintStart_toStartOf="@+id/cbLuces"
+            app:layout_constraintTop_toBottomOf="@+id/cbLuces" />
+
+        <CheckBox
+            android:id="@+id/cbCocina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inspec_cocina"
+            app:layout_constraintStart_toStartOf="@+id/cbBanio"
+            app:layout_constraintTop_toBottomOf="@+id/cbBanio" />
+
+        <CheckBox
+            android:id="@+id/cbDormitorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inspec_dormitorio"
+            app:layout_constraintStart_toStartOf="@+id/cbCocina"
+            app:layout_constraintTop_toBottomOf="@+id/cbCocina" />
+
+        <TextView
+            android:id="@+id/tvTerminaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terminaciones"
+            app:layout_constraintStart_toStartOf="@+id/cbDormitorio"
+            app:layout_constraintTop_toBottomOf="@+id/cbDormitorio" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/cbDormitorio"
+            app:layout_constraintTop_toBottomOf="@+id/tvTerminaciones">
+
+            <RadioButton
+                android:id="@+id/rbEstadoMalo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estado_general_malo" />
+
+            <RadioButton
+                android:id="@+id/rbEstadoRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estado_general_regular" />
+
+            <RadioButton
+                android:id="@+id/rbEstadoNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estado_general_normal" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lblPuntaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inspec_puntaje"
+            app:layout_constraintStart_toStartOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <TextView
+            android:id="@+id/tvPuntaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tvPuntaje"
+            app:layout_constraintBottom_toBottomOf="@+id/lblPuntaje"
+            app:layout_constraintStart_toEndOf="@+id/lblPuntaje" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/btnGuardar"
+            app:backgroundTint="@color/design_default_color_secondary_variant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPuntaje" />
+
+        <Button
+            android:id="@+id/btnAlerta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/btnAlerta"
+            app:backgroundTint="@color/design_default_color_error"
+            app:layout_constraintStart_toEndOf="@+id/btnGuardar"
+            app:layout_constraintTop_toBottomOf="@+id/tvPuntaje" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

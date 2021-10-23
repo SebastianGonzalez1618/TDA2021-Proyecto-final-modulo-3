@@ -2,6 +2,7 @@ package com.example.tdaproyectofinalmodulo3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
             if (contraseniaValida) {
                 Toast.makeText(this, "Ingresando...", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, InspeccionActivity.class);
+                startActivity(intent);
             } else {
                 ++intentos;
                 Toast.makeText(this, "Email o contraseña incorrecta. \n" + intentos + " de " + MAX_INTENTOS + " intentos.", Toast.LENGTH_SHORT).show();

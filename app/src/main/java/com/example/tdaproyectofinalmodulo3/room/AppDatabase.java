@@ -8,6 +8,7 @@ import androidx.room.RoomDatabase;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import com.example.tdaproyectofinalmodulo3.Probando;
 import com.example.tdaproyectofinalmodulo3.dao.DepartamentoDao;
 import com.example.tdaproyectofinalmodulo3.model.Departamento;
 
@@ -23,6 +24,11 @@ public abstract class AppDatabase extends RoomDatabase {
         if(instance == null)
         {
             instance = Room.databaseBuilder(context.getApplicationContext(), AppDatabase.class,"proyecto_db").build();
+            Probando.baseDeDatosNueva = true;
+        }
+        else
+        {
+            Probando.baseDeDatosNueva = false;
         }
         return instance;
     }

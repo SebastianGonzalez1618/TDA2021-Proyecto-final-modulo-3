@@ -48,13 +48,6 @@ public class DepartamentoViewModel extends AndroidViewModel {
         depa = depaRepo.buscar(id);
     }
 
-    /*
-    public void buscar(Date fecha)
-    {
-        compra = compraRepo.buscar(fecha);
-    }
-    */
-
     public void actualizar(Departamento depa)
     {
         depaRepo.actualizar(depa);

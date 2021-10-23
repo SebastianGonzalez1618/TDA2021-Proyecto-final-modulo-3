@@ -6,7 +6,8 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "departamento")
 public class Departamento {
-    @PrimaryKey(autoGenerate = true)
+    //@PrimaryKey(autoGenerate = true)
+    @PrimaryKey
     @ColumnInfo(name = "id_departamento")
     private int idDepartamento;
     @ColumnInfo(name = "nombre_proyecto")
