@@ -32,7 +32,6 @@ import com.example.tdaproyectofinalmodulo3.viewmodel.DepartamentoViewModel;
 
 public class InspeccionFragment extends Fragment {
 
-    public class AgregarFragment extends Fragment {
 
 
         FragmentInspeccionBinding b;
@@ -101,6 +100,4 @@ public class InspeccionFragment extends Fragment {
 */
             return b.getRoot();
         }
-    }
-
 }
